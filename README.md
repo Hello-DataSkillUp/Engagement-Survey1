@@ -10,7 +10,7 @@ In this project, we utilize data analysis techniques in R to uncover gender-base
 The HR Manager is committed to ensuring that all employees feel equally engaged and valued. To achieve this, they need to understand the differences in engagement experiences between male and female employees. Help uncover these insights, to help create a more inclusive and satisfying work environment for everyone.
 
 ## Data Description
-- Mock employee engagement survey dataset developed by Aaron Rodriguez (https://www.linkedin.com/in/aaron-rodriguez-422896101/).
+- Mock employee engagement survey dataset developed by Aaron Rodriguez. (https://www.linkedin.com/in/aaron-rodriguez-422896101/)
 - The dataset includes 1,000 rows and 28 columns, representing the responses of all employees within the organization at the individual level.
 - Captures employees' perceptions and attitudes -  quantifying scores for metrics such as recommendation, engagement, satisfaction, leadership perception, and others.
 - Features a mix of numeric and categorical data types.
