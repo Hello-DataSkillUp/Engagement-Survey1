@@ -47,14 +47,17 @@ Combination of summary tables, visual techniques such as density plots, boxplots
 - Summary table provides an overview of key engagement metrics by gender.
 - Survey includes responses from 490 female employees and 510 male employees, providing a balanced perspective across genders.
 - Male employees have a slightly higher mean `Recommendation Score` (6.45) compared to female employees (6.04), indicating a marginally higher likelihood of recommending the organization as a place to work.
-- Both genders exhibit moderate levels of agreeable responses, with males at 56.93% and females at 68.08%, reflecting different levels of satisfaction.
+- Both genders exhibit moderate levels of agreeable responses, with females at 56.93% and males at 68.08%, reflecting different levels of satisfaction.
+- Because females have lower scores on the agreeable questions and a lower ENPS, we can infer that some amount of the difference in engagement can be explained by the questions in this survey
 
 ##### _eNPS Summary Table_
 
-| Gender | Count | Promoters                 | Detractors                  | % Promoters             | % Detractors              |  eNPS Score         |
-|--------|-------|---------------------------|-----------------------------|-------------------------|---------------------------|---------------------|
-| Female | 490   | 42                        | 285                         | 8.57                    | 58.20                     | -49.6               |
-| Male   | 510   | 70                        | 233                         | 13.7                    | 45.70                     | -32.0               |
+
+| Gender | Count | Promoters | Detractors | Neutral | % Promoters | % Detractors | % Neutral | eNPS Score |
+|--------|-------|-----------|------------|---------|-------------|--------------|-----------|------------|
+| Female | 490   | 42        | 285        | 163     | 8.57        | 58.20        | 33.27     | -49.6      |
+| Male   | 510   | 70        | 233        | 207     | 13.7        | 45.70        | 40.59     | -32.0      |
+
 
  
 - Summary table for eNPS provides an overview of promoters and detractors by gender.
@@ -78,11 +81,11 @@ To explore these differences, visual methods such as density plots, boxplots, an
 ![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/a7637264-b879-4cd5-8745-8e34f5f7cdd3)
 
 
- - Boxplots highlight differences in means and showcase the spread of the two groups, emphasizing disparities in their distributions.
- - We observe that there are differences in means for variables such as `OverallSatisfaction`, `TrustInSeniorLeaders`, `RecognitionForContributions`, `SafeLearningEnvironment` and `BeliefInSurveyAction`.
- - Most variables show overlapping interquartile ranges, indicating that despite differences in means, the middle 50% of responses for each gender often fall within similar ranges.
- - Distibution of variables such as `OpportunityForGrowth` and `PersonalLifeFlexibility`, suggest that some respondents have significantly different experiences compared to the majority.
- 
+ - Boxplots highlight differences in means and showcase the spread of the two groups, emphasizing disparities in their distributions. The box shows the InterQuartile Range (IQR), or the middle 50% of values, while the whiskers extend out to Q1 - 1.5x IQR and Q3 + 1.5x IQR
+ - We observe that for most questions, the median answer for both males and females is the same. However, there are differences in the medians ans for the following questions: `OverallSatisfaction`, `SafeLearningEnvironment` and `BeliefInSurveyAction`.
+ - Some variables, while having the same median, have offset IQRs where one of the quartiles extends an additional point in the positive or negative direction. The following questions reflect where males have higher responses with the same means: `SeniorLeadersValueDifferences`, `TrustInSeniorLeaders`, `RecognitionForContributions`, `WorkplaceAuthenticity`, `ManagerAutonomy`, `OpportunityForGrowth`, `PersonalLifeFlexibility`. 
+ - The following questions reflect where females have higher responses with the same means: `RoleCareerAlignment`.
+
 
 ##### _Heatmaps_
 ![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/49b8992a-bf89-47d0-bf39-502fd6891ffa)
@@ -110,17 +113,22 @@ To further understand the relationships between various metrics, correlation ana
 
 
 ## Observations 
-- Gender-specific variations exist in responses to several survey questions.
-- Targeted interventions in recognition, work-life balance, and leadership trust are necessary to ensure equity in employee experiences and improve engagement.
+- Gender-specific differences exist in responses to several categories of survey questions, all of which highlight better experiences for males than females. 
+- Targeted interventions in career development & recognition, work-life balance, and leadership trust are necessary to ensure equity in employee experiences and improve engagement.
 
 
 ## Recommendations  
-- **_Improve Recognition for Contributions_**: Female employees report lower recognition, indicating a need for better recognition practices targeting female employees.
-- **_Enhance Personal Life Flexibility_**: Both genders show low agreement in `PersonalLifeFlexibility`, with females significantly lower, suggesting the need for policies that support work-life balance.
-- **_Foster a Safe Learning Environment_**: There is a notable correlation between `SafeLearningEnvironment` and other engagement metrics, especially for males. Enhancing this aspect can have a positive ripple effect.
-- **_Increase Trust in Leadership_**: `TrustInSeniorLeaders` is strongly correlated with other positive engagement metrics. Initiatives to build and maintain trust can improve overall engagement.
+- **_Evaluate Drivers of Low Work-Life Balance_**: Everyone shows extremely low scores in their workload being reasonable, however females have particularly low scores ’PersonalLifeFlexibility`. The question remains - why is this affecting females more than males? Is it more of a reflection of issues with managers and senior leaders? Or is it connected to our in-office policies? Understanding the drivers of this difference will allow us to make the changes necessary to improve this for everyone. - **_Investigate Issues In Role Fit_**: In many ways, our managers are doing a decent job of supporting their employees. They give timely feedback, care about employees personally, and give solid recognition. Yet, employees are struggling with whether their skills are being used properly and if their role aligns with their interests. There are two possible hypotheses. First, this could be symptomatic of a culture where there is too much red tape - too many meetings, too much documentation, too much planning and not enough actual doing of the job. Or, this could indicate issues in hiring, where we have previously tried to hire flexible generalists to fit into our roles rather than experts. By investigating these issues, we can create an environment where people are more excited about the work they do every day. 
+
+
+- **_Unconscious Bias Training_**: The differences in the experiences between males and females is stark, particularly in the way they are treated by others. Receiving recognition, receiving information from leaders, having an environment where people can safely learn and make mistakes - these are all tangible behaviors where issues are creeping in. Making headway on these issues would trickle down into more positive perceptions of managers and leaders at the company, and improve overall engagement 
+
 
 ## Future Analysis Scope  
 - Identify key drivers of engagement for the groups. 
 - Extend the analysis to demographic categories such as race, department, and job level to identify disparities.
+
+## Conclusion
+By leveraging summary tables, visual techniques, and correlation analysis, we have quickly investigated key areas where male and female employees have differing experiences and perceptions of the company.  In a few lines of code, we were able to identify three key areas of concern. These insights can guide strategic HR decisions to enhance overall employee satisfaction, address specific gender-based needs, and drive organizational success.
+
 
