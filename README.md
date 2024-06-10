@@ -20,7 +20,7 @@ As an HR function, we are committed to ensuring that all employees, regardless o
 - Captures employees' perceptions and attitudes -  quantifying scores for metrics such as recommendation, engagement, satisfaction, leadership perception, and others.
 - Features a mix of numeric and categorical data types.
 - No missing values were reported in the dataset, indicating completeness and reliability for analysis.
-- Demographic variables include gender, race, department, and job level
+- Demographic variables include gender, race, department, and job level.
 
 ## Key Metrics
 - Recommendation score: Serves as a key indicator of employee satisfaction and engagement. Comes directly from the question "On a scale of 0 to 10, how likely is it that you would recommend DataSkillUp as a place to work?"
