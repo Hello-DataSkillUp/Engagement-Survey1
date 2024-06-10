@@ -4,7 +4,6 @@
 ## Introduction
 Employee engagement is a critical determinant of organizational success, influencing productivity, retention, and overall workplace satisfaction. However, the employee experience can significantly differ based on one's background, especially between male and female employees.
 
-
 Engagement surveys, often administered periodically, offer employees an opportunity to provide feedback on their experiences and perceptions within the workplace, helping organizations to gauge satisfaction levels, uncover areas for improvement, and tailor strategies to enhance overall employee engagement. These surveys play a crucial role in capturing employee sentiments and experiences, providing a structured way to gather quantitative data on various aspects of the workplace. By systematically collecting and analyzing survey responses, organizations can identify trends, pinpoint areas of concern, and implement data-driven strategies to enhance the work environment. 
 
 In this project, we utilize data analysis techniques in R to uncover gender-based insights into employee engagement. By identifying differences in work experiences and perceptions between male and female employees, this analysis can guide strategic HR decisions to enhance satisfaction, foster inclusivity, and drive organizational success. Furthermore, the analysis provides a framework that can be applied to other similar datasets. 
@@ -13,7 +12,7 @@ _While our focus is on gender, it's important to note that similar analyses can 
 
 
 ## Problem Statement
-The HR Manager is committed to ensuring that all employees feel equally engaged and valued. To achieve this, they need to understand the differences in engagement experiences between male and female employees. Help uncover these insights, to help create a more inclusive and satisfying work environment for everyone.
+As an HR function, we are committed to ensuring that all employees, regardless of background or identity, feel equally engaged and valued. One of the ways that we achieve this is by understanding the differences in engagement between male and female employees. These insights can help create a more inclusive and satisfying work environment for everyone.
 
 ## Data Description
 - Mock employee engagement survey dataset developed by Aaron Rodriguez. (https://www.linkedin.com/in/aaron-rodriguez-422896101/)
@@ -24,9 +23,10 @@ The HR Manager is committed to ensuring that all employees feel equally engaged 
 - Demographic variables include gender, race, department, and job level
 
 ## Key Metrics
-- Recommendation score: Serves as a key indicator of employee satisfaction and engagement. Comes directly from the question "On a scale of 0 to 10, how likely is it that you would recommend DataSkillUp as a place to work?" 
+- Recommendation score: Serves as a key indicator of employee satisfaction and engagement. Comes directly from the question "On a scale of 0 to 10, how likely is it that you would recommend DataSkillUp as a place to work?"
 - Percentage agreeable: The percentage of responses that are 4 or higher on a 5-point scale. Helps in identifying the proportion of employees who have a positive perception of specific aspects of their work environment.
 - eNPS: Employee Net Promoter Score, calculated as the percentage of Promoters (scores 9-10) minus the percentage of Detractors (scores 0-6). Indicates overall employee loyalty and satisfaction.
+
 
 ## Data Preparation
 - Ensured there were no missing values in the dataset. 
@@ -35,7 +35,7 @@ The HR Manager is committed to ensuring that all employees feel equally engaged 
 - Split the data into its numerical subsets for applying correlation analysis.
 
 ## Data Analysis
-Combination of summary tables, visual techniques such as density plots, boxplots, heatmaps, and correlation analysis can be used to explore such data meaningfully and solve similar problems on other datasets. Below are a few observations from the analysis.
+Combination of summary tables, visual techniques such as density plots, boxplots, heatmaps, and correlation analysis can be used to explore such data meaningfully at an overall level and solve similar problems on other datasets. Below are a few observations from the analysis.
 
 ##### _Summary Table_
 
