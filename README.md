@@ -93,7 +93,7 @@ To explore these differences, visual methods such as density plots, boxplots, an
 ![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/7a9ca345-b131-42c1-8a2b-21b0899fed4e)
 
  - Heatmaps illustrate variations in the percentage of agreeable responses, highlighting the differing responses between genders.
- - We observe stark difference in responses for `PersonalLifeFlexibility`, `OverallSatisfaction`, `OpportunityForGrowth`, `ManagerAutonomy` and `InformedByLeadership`.
+ - We observe stark difference in responses such as `PersonalLifeFlexibility`, `OverallSatisfaction`, `OpportunityForGrowth`, `ManagerAutonomy`, `SeniorLeadersValueDifferences` and `InformedByLeadership`.
  - The disparities in the responses emphasize gender-specific variations, indicating different experiences between male and female employees.
  
 
