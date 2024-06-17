@@ -87,7 +87,7 @@ To explore these differences, visual methods such as density plots, boxplots, an
 
 
 ##### _Boxplots_
-![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/a7637264-b879-4cd5-8745-8e34f5f7cdd3)
+![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/fa0b7d51-de41-412e-87aa-f68ad2b60f0e)
 
 
  - Boxplots highlight differences in means and showcase the spread of the two groups, emphasizing disparities in their distributions. The box shows the InterQuartile Range (IQR), or the middle 50% of values, while the whiskers extend out to Q1 - 1.5x IQR and Q3 + 1.5x IQR
@@ -109,9 +109,8 @@ To explore these differences, visual methods such as density plots, boxplots, an
 To further understand the relationships between various metrics, correlation analysis can be employed to explore the interactions between survey responses for male and female employees.
 
 ##### _Correlation Analysis_
-![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/e7861a30-127b-4ed2-b354-c65a64a37636)
-
-![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/d4e08a1a-9665-46de-aff0-d2773be8dd05)
+![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/e7947c35-1fb4-49bc-9b0e-2e2ce2f08485)
+![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/3eb66b82-23fc-4733-a326-97af3e19cb6f)
 
 
  - Correlation analysis identifies the most strongly correlated pairs of engagement metrics within each gender group.
