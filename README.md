@@ -40,10 +40,10 @@ Combination of summary tables, visual techniques such as density plots, boxplots
 
 ##### _Summary Table_
 
-| Gender | Count | Mean eNPS Rating          | eNPS Score                | Mean Percentage Agreeable   |
-|--------|-------|---------------------------|---------------------------|-----------------------------|
-| Female | 490   | 6.04                      | -49.6                     | 56.93                       |
-| Male   | 510   | 6.45                      | -32.0                     | 68.08                       |
+| Gender | Count | Mean eNPS Rating          | eNPS Score                | Mean Percentage Agreeable   |  Median eNPS Rating          | StdDevation eNPS Rating |
+|--------|-------|---------------------------|---------------------------|-----------------------------|------------------------------|-------------------------|
+| Female | 490   | 6.04                      | -49.6                     | 56.93                       | 6                            | 1.88                    |
+| Male   | 510   | 6.45                      | -32.0                     | 68.08                       | 7                            | 2.10                    |
 
 - Summary table provides an overview of key engagement metrics by gender.
 - Survey includes responses from 490 female employees and 510 male employees, providing a balanced perspective across genders.
@@ -64,6 +64,14 @@ Combination of summary tables, visual techniques such as density plots, boxplots
 - Summary table for eNPS provides an overview of promoters and detractors by gender.
 - The disparity in the number of promoters and detractors between genders underscores potential differences in employee experiences, highlighting specific issues in female employee engagement and satisfaction.
 - Addressing the concerns of female detractors could significantly enhance overall employee morale and eNPS scores since a larger proportion of females are dissatisfied with the organization (detractors).
+
+##### _eNPS Rating - Visual Inspection_
+![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/7e4c19a7-c4fd-415d-b7a8-f5bfaa2a9064)
+![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/4abdfa8e-7179-4455-955a-e2779fc37c25)
+
+- Female employees have a broader distribution of eNPS Rating with peaks around 6 and 8, whereas male employees' scores are more concentrated around 7, indicating differences in how likely each gender is to recommend the company.
+- Boxplots confirms the summary table statistic - Male employees have a slightly higher median eNPS Rating compared to female employees.
+
 
 **_This difference in mean eNPS Rating, mean percentage agreeable responses, eNPS scores, and the percentage of promoters and detractors warrants a deeper dive into the responses of both genders._**
 
