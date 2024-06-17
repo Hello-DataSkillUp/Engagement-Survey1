@@ -23,9 +23,10 @@ As an HR function, we are committed to ensuring that all employees, regardless o
 - Demographic variables include gender, race, department, and job level.
 
 ## Key Metrics
-- Recommendation score: Serves as a key indicator of employee satisfaction and engagement. Comes directly from the question "On a scale of 0 to 10, how likely is it that you would recommend DataSkillUp as a place to work?"
+- eNPS Rating: Serves as a key indicator of employee satisfaction and engagement. Comes directly from the question "On a scale of 0 to 10, how likely is it that you would recommend DataSkillUp as a place to work?"
+- eNPS Score: Employee Net Promoter Score, calculated as the percentage of Promoters (scores 9-10) minus the percentage of Detractors (scores 0-6). Indicates overall employee loyalty and satisfaction.
 - Percentage agreeable: The percentage of responses that are 4 or higher on a 5-point scale. Helps in identifying the proportion of employees who have a positive perception of specific aspects of their work environment.
-- eNPS: Employee Net Promoter Score, calculated as the percentage of Promoters (scores 9-10) minus the percentage of Detractors (scores 0-6). Indicates overall employee loyalty and satisfaction.
+
 
 
 ## Data Preparation
@@ -39,16 +40,16 @@ Combination of summary tables, visual techniques such as density plots, boxplots
 
 ##### _Summary Table_
 
-| Gender | Count | Mean Recommendation Score | Median Recommendation Score | SD Recommendation Score | Mean Percentage Agreeable |  eNPS Score         |
-|--------|-------|---------------------------|-----------------------------|-------------------------|---------------------------|---------------------|
-| Female | 490   | 6.04                      | 6                           | 1.88                    | 56.93                     | -49.6               |
-| Male   | 510   | 6.45                      | 7                           | 2.10                    | 68.08                     | -32.0               |
+| Gender | Count | Mean eNPS Rating          | eNPS Score                | Mean Percentage Agreeable   |
+|--------|-------|---------------------------|---------------------------|-----------------------------|
+| Female | 490   | 6.04                      | -49.6                     | 56.93                       |
+| Male   | 510   | 6.45                      | -32.0                     | 68.08                       |
 
 - Summary table provides an overview of key engagement metrics by gender.
 - Survey includes responses from 490 female employees and 510 male employees, providing a balanced perspective across genders.
-- Male employees have a slightly higher mean `Recommendation Score` (6.45) compared to female employees (6.04), indicating a marginally higher likelihood of recommending the organization as a place to work.
+- Male employees have a slightly higher mean eNPS Rating (6.45) compared to female employees (6.04), indicating a marginally higher likelihood of recommending the organization as a place to work.
 - Both genders exhibit moderate levels of agreeable responses, with females at 56.93% and males at 68.08%, reflecting different levels of satisfaction.
-- Because females have lower scores on the agreeable questions and a lower ENPS, we can infer that some amount of the difference in engagement can be explained by the questions in this survey
+- Because females have lower scores on the agreeable questions and a lower eNPS values, we can infer that some amount of the difference in engagement can be explained by the questions in this survey
 
 ##### _eNPS Summary Table_
 
@@ -64,7 +65,7 @@ Combination of summary tables, visual techniques such as density plots, boxplots
 - The disparity in the number of promoters and detractors between genders underscores potential differences in employee experiences, highlighting specific issues in female employee engagement and satisfaction.
 - Addressing the concerns of female detractors could significantly enhance overall employee morale and eNPS scores since a larger proportion of females are dissatisfied with the organization (detractors).
 
-**_This difference in mean recommendation scores, mean percentage agreeable responses, eNPS scores, and the percentage of promoters and detractors warrants a deeper dive into the responses of both genders._**
+**_This difference in mean eNPS Rating, mean percentage agreeable responses, eNPS scores, and the percentage of promoters and detractors warrants a deeper dive into the responses of both genders._**
 
 To explore these differences, visual methods such as density plots, boxplots, and heatmaps are employed to compare the engagement scores and perceptions between male and female employees.
 
