@@ -40,24 +40,23 @@ Combination of summary tables, visual techniques such as density plots, boxplots
 
 ##### _Summary Table_
 
-| Gender | Count | Mean eNPS Rating          | eNPS Score                | Mean Percentage Agreeable   |  Median eNPS Rating          | StdDevation eNPS Rating |
-|--------|-------|---------------------------|---------------------------|-----------------------------|------------------------------|-------------------------|
-| Female | 490   | 6.04                      | -49.6                     | 56.93                       | 6                            | 1.88                    |
-| Male   | 510   | 6.45                      | -32.0                     | 68.08                       | 7                            | 2.10                    |
+| Gender | Count | Mean eNPS Rating          | eNPS Score                | Median eNPS Rating          | StdDevation eNPS Rating |
+|--------|-------|---------------------------|---------------------------|-----------------------------|-------------------------|
+| Female | 490   | 7.01                      | -15.1                     | 7                           | 1.83                    |
+| Male   | 510   | 7.41                      | 6.86                      | 8                           | 2.03                    |
 
 - Summary table provides an overview of key engagement metrics by gender.
 - Survey includes responses from 490 female employees and 510 male employees, providing a balanced perspective across genders.
-- Male employees have a slightly higher mean eNPS Rating (6.45) compared to female employees (6.04), indicating a marginally higher likelihood of recommending the organization as a place to work.
-- Both genders exhibit moderate levels of agreeable responses, with females at 56.93% and males at 68.08%, reflecting different levels of satisfaction.
-- Because females have lower scores on the agreeable questions and a lower eNPS values, we can infer that some amount of the difference in engagement can be explained by the questions in this survey
+- Male employees have a slightly higher mean eNPS Rating (7.41) compared to female employees (7.01), indicating a marginally higher likelihood of recommending the organization as a place to work.
+- Because females have lower scores on the eNPS values, we can infer that some amount of the difference in engagement can be explained by the questions in this survey
 
 ##### _eNPS Summary Table_
 
 
 | Gender | Count | Promoters | Detractors | Neutral | % Promoters | % Detractors | % Neutral | eNPS Score |
 |--------|-------|-----------|------------|---------|-------------|--------------|-----------|------------|
-| Female | 490   | 42        | 285        | 163     | 8.57        | 58.20        | 33.27     | -49.6      |
-| Male   | 510   | 70        | 233        | 207     | 13.7        | 45.70        | 40.59     | -32.0      |
+| Female | 490   | 98        | 172        | 220     | 20.0        | 35.10        | 44.90     | -15.1      |
+| Male   | 510   | 176       | 141        | 193     | 34.5        | 27.65        | 37.84     | 6.86       |
 
 
  
@@ -66,20 +65,19 @@ Combination of summary tables, visual techniques such as density plots, boxplots
 - Addressing the concerns of female detractors could significantly enhance overall employee morale and eNPS scores since a larger proportion of females are dissatisfied with the organization (detractors).
 
 ##### _eNPS Rating - Visual Inspection_
-![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/7e4c19a7-c4fd-415d-b7a8-f5bfaa2a9064)
-![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/4abdfa8e-7179-4455-955a-e2779fc37c25)
+![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/705e77f1-1390-4fd9-9273-33fc6d34e4e0)
+![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/239f4d26-1c5a-4405-b40e-6b12d9823d97)
+
 
 - Female employees have a broader distribution of eNPS Rating with peaks around 6 and 8, whereas male employees' scores are more concentrated around 7, indicating differences in how likely each gender is to recommend the company.
 - Boxplots confirms the summary table statistic - Male employees have a slightly higher median eNPS Rating compared to female employees.
 
-
-**_This difference in mean eNPS Rating, mean percentage agreeable responses, eNPS scores, and the percentage of promoters and detractors warrants a deeper dive into the responses of both genders._**
+**_This difference in mean eNPS Rating, eNPS scores, and the percentage of promoters and detractors warrants a deeper dive into the responses of both genders._**
 
 To explore these differences, visual methods such as density plots, boxplots, and heatmaps are employed to compare the engagement scores and perceptions between male and female employees.
 
 ##### _Density Plots_
-![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/69cbce62-7546-4596-a85b-2ecd0b9073c7)
-
+![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/cb9c9701-4542-41dc-9f69-ecd8b023f021)
 
  - Density plots reveal disparities in the responses between genders, indicating distinct behavioral patterns across various metrics.
  - We observe clear differences in survey responses for both groups, particularly in variables such as `TrustInSeniorLeaders`, `OpportunityForGrowth`, `RecognitionForContributions`, `WorkplaceAuthenticity` and `PersonalLifeFlexibility`.
@@ -87,19 +85,19 @@ To explore these differences, visual methods such as density plots, boxplots, an
 
 
 ##### _Boxplots_
-![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/fa0b7d51-de41-412e-87aa-f68ad2b60f0e)
+![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/2c635f34-d8a7-494c-82d1-26814cd89816)
 
 
  - Boxplots highlight differences in means and showcase the spread of the two groups, emphasizing disparities in their distributions. The box shows the InterQuartile Range (IQR), or the middle 50% of values, while the whiskers extend out to Q1 - 1.5x IQR and Q3 + 1.5x IQR
- - We observe that for most questions, the median answer for both males and females is the same. However, there are differences in the medians ans for the following questions: `OverallSatisfaction`, `SafeLearningEnvironment` and `BeliefInSurveyAction`.
- - Some variables, while having the same median, have offset IQRs where one of the quartiles extends an additional point in the positive or negative direction. The following questions reflect where males have higher responses with the same means: `SeniorLeadersValueDifferences`, `TrustInSeniorLeaders`, `RecognitionForContributions`, `WorkplaceAuthenticity`, `ManagerAutonomy`, `OpportunityForGrowth`, `PersonalLifeFlexibility`. 
- - The following questions reflect where females have higher responses with the same means: `RoleCareerAlignment`.
+ - We observe that for most questions, the median answer for both males and females is the same. However, there are differences in the medians for the following questions: `OverallSatisfaction`, `SafeLearningEnvironment` and `BeliefInSurveyAction`.
+ - Some variables, while having the same median, have offset IQRs where one of the quartiles extends in the positive or negative direction. The following questions reflect where males have higher responses with the same means: `SeniorLeadersValueDifferences`, `TrustInSeniorLeaders`, `RecognitionForContributions`, `WorkplaceAuthenticity`, `ManagerAutonomy`, `OpportunityForGrowth`, `PersonalLifeFlexibility`. 
+ - The following questions reflect where females have higher responses with the same median: `RoleCareerAlignment`.
 
 
 ##### _Heatmaps_
 
 
-![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/7a9ca345-b131-42c1-8a2b-21b0899fed4e)
+![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/fcd93081-8211-47e7-8ddf-b23621b73da5)
 
  - Heatmaps illustrate variations in the percentage of agreeable responses, highlighting the differing responses between genders.
  - We observe stark difference in responses such as `PersonalLifeFlexibility`, `OverallSatisfaction`, `OpportunityForGrowth`, `ManagerAutonomy`, `SeniorLeadersValueDifferences` and `InformedByLeadership`.
@@ -109,8 +107,9 @@ To explore these differences, visual methods such as density plots, boxplots, an
 To further understand the relationships between various metrics, correlation analysis can be employed to explore the interactions between survey responses for male and female employees.
 
 ##### _Correlation Analysis_
-![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/e7947c35-1fb4-49bc-9b0e-2e2ce2f08485)
-![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/3eb66b82-23fc-4733-a326-97af3e19cb6f)
+![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/2d2f36af-c813-4664-8ebe-f60523d2fb51)
+![image](https://github.com/Hello-DataSkillUp/Engagement-Survey1/assets/165890395/48b84bac-1703-447c-8089-56a713ca8790)
+
 
 
  - Correlation analysis identifies the most strongly correlated pairs of engagement metrics within each gender group.
@@ -118,13 +117,12 @@ To further understand the relationships between various metrics, correlation ana
  - For males, there is strong correlation between pairs such as `SafeLearningEnvironment` and `WorkplaceAuthenticity` (0.48) and `WorkplaceAuthenticity` and `TrustInSeniorLeaders` (0.42).
  - For females, there is slight correlation between `SafeLearningEnvironment` and `WorkplaceAuthenticity` (0.25) and `SafeLearningEnvironment` and `TrustInSeniorLeaders` (0.21).
  - Both male and female employees show a positive correlation between a safe learning environment and workplace authenticity, as well as between workplace authenticity and trust in senior leaders. However, these correlations are stronger for male employees.
- - There is a gender-specific dynamic in how leadership values and learning environments interact. Male employees show a notable correlation between `SafeLearningEnvironment` and the perception that SeniorLeadersValueDifferences. This correlation does not appear in the top correlations for female employees.
+ - There is a gender-specific dynamic in how leadership values and learning environments interact. Male employees show a notable correlation between `SafeLearningEnvironment` and the perception that `SeniorLeadersValueDifferences`. This correlation does not appear in the top correlations for female employees.
 
 
 ## Observations 
 - Gender-specific differences exist in responses to several categories of survey questions, all of which highlight better experiences for males than females. 
 - Targeted interventions in career development & recognition, work-life balance, and leadership trust are necessary to ensure equity in employee experiences and improve engagement.
-
 
 ## Recommendations  
 - **_Evaluate Drivers of Low Work-Life Balance_**: Everyone shows extremely low scores in their workload being reasonable, however females have particularly low scores ’PersonalLifeFlexibility`. The question remains - why is this affecting females more than males? Is it more of a reflection of issues with managers and senior leaders? Or is it connected to our in-office policies? Understanding the drivers of this difference will allow us to make the changes necessary to improve this for everyone.
@@ -133,7 +131,6 @@ To further understand the relationships between various metrics, correlation ana
 
 
 - **_Unconscious Bias Training_**: The differences in the experiences between males and females is stark, particularly in the way they are treated by others. Receiving recognition, receiving information from leaders, having an environment where people can safely learn and make mistakes - these are all tangible behaviors where issues are creeping in. Making headway on these issues would trickle down into more positive perceptions of managers and leaders at the company, and improve overall engagement 
-
 
 ## Future Analysis Scope  
 - Identify key drivers of engagement for the groups. 
